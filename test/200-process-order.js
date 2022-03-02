@@ -6,7 +6,7 @@ describe('process.order(payload, callback)', function () {
         it('calls back with an empty object', function (done) {
             process.order({}, function (err, result) {
                 if (err) return done(err);
-                expect(result).to.deep.equal({});
+                expect(result).to.deep.equal(null);
                 done();
             });
         });
